@@ -23,16 +23,33 @@ The code in the inital space_merchant repository provides us with two objects:
 <h3>Task 2 - Create the Galaxy (An object that represents space as a whole) </h3>
 The Galaxy is responsible for creating all of the game locations and allowing event code to access these locations (event code gives the player some choices, fetches an action from the keyboard, and responds appropriately). 
 There should be only one Galaxy. The Galaxy object should construct Sector, Planet, and Station objects. 
-<p>
-<b>Sectors</b>
-Sectors are pieces of space the players can move between. 
-Think of them as squares on the game board. These areas must be connected, so the player can move from location to location.
-</p>
-<p>
+
 <b>Navigation</b>
 The Galaxy should provide a pathfinding algorithm, for use in navigation. The pathfinding method should return an Array of Sectors beginning with 
 the start_sector and ending with the finish_sector. If the optional avoid_sectors are provided, they should not be used. It's okay to return nil, if a path could not be found, but this should only be possible with avoid_sectors.
 </p>
+
+<h3>Task 3 - Create Sectors (Think of Sectors as squares on the game board)</h3> 
+<p>
+<b>Sectors</b>
+The Sector is the main interface for moving around the Galaxy. The Sector should show the player their location, and request a command.
+These areas must be connected, so the player can move from location to location.
+</p>
+
+<b>Game Level Functions</b>
+Any game level functions should be included within the Sector code e.g. 'quit' 'save' 'dock at station' 'land on planet' and 'plot course'
+
+<h3>Task 4 - Create Stations (Stations are where the player can buy and sell goods)</h3> 
+<p>
+There may be some set of categories available in the Galaxy but only a subset of those goods should be traded in an individual Sector. 
+</p>
+
+<h3>Task 5 - Create Planets</h3> 
+<p>
+Allow players to pick up special people and cargo to transport to other planets.
+</p> 
+
+
 
 <h2>Contact Us</h2> 
 <ul>
