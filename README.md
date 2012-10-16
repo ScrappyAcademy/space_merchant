@@ -37,7 +37,7 @@ These areas must be connected, so the player can move from location to location.
 </p>
 
 <b>Game Level Functions</b>
-Any game level functions should be included within the Sector code e.g. 'quit' 'save' 'dock at station' 'land on planet' and 'plot course'
+Any game level functions should be included within the Sector code e.g. 'quit' 'save' 'dock at station' 'land on planet' 'plot course' 'buy' 'sell' 
 
 <h3>Task 4 - Create Stations (Stations are where the player can buy and sell goods)</h3> 
 <p>
@@ -46,7 +46,7 @@ There may be some set of categories available in the Galaxy but only a subset of
 
 <h3>Task 5 - Create Planets</h3> 
 <p>
-Allow players to pick up special people and cargo to transport to other planets.
+Allow players to pick up special people and cargo to transport to other planets. Use these objects to form a basic underlying plot for the game.  
 </p> 
 
 
