@@ -14,15 +14,15 @@ In this project we'll use Ruby to build an interactive game. The premise of the 
 
 <h2>Requirements</h2>
 <br/>
-<h3>Step 1 - Fork the space_merchant repository</h3>
+<h3>Task 1 - Fork the space_merchant repository</h3>
 The code in the inital space_merchant repository provides us with two objects:
 <p>The Player Object - centralized storage for game state information e.g. how much money the player has</p>
 <p>The Event Loop - the options a player has available at any given time, which are a function of where they are e.g. while flying through space a player can select a destination but when docked commands center around buying and selling goods</p>
 
 
-<li>Step 1 - Create the Galaxy (An object that represents space as a whole) 
-<p>The Galaxy is responsible for creating all of the game locations and allowing event code to access these locations. Event code gives the player some choices, fetches an action from the keyboard, and responds appropriately. </p>
-</li>
+<h3>Task 2 - Create the Galaxy (An object that represents space as a whole) </h3>
+The Galaxy is responsible for creating all of the game locations and allowing event code to access these locations (event code gives the player some choices, fetches an action from the keyboard, and responds appropriately). 
+There should be only one Galaxy. 
 <h2>Contact Us</h2> 
 <ul>
 <li>Github: <a href="https://github.com/ScrappyAcademy">https://github.com/ScrappyAcademy</a></li>
