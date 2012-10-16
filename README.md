@@ -39,10 +39,14 @@ These areas must be connected, so the player can move from location to location.
 <b>Game Level Functions</b>
 Any game level functions should be included within the Sector code e.g. 'quit' 'save' 'dock at station' 'land on planet' 'plot course' 'buy' 'sell' 
 
+
 <h3>Task 4 - Create Stations (Stations are where the player can buy and sell goods)</h3> 
 <p>
 There may be some set of categories available in the Galaxy but only a subset of those goods should be traded in an individual Sector. 
 </p>
+<b>Ship Capacity</b>
+Use station implementations to flesh out the player's ship. The player's ship should have a limited capacity of goods that it can carry at a time.
+ 
 
 <h3>Task 5 - Create Planets</h3> 
 <p>
