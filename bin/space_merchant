@@ -4,8 +4,6 @@
 $LOAD_PATH << File.expand_path('../lib', File.dirname(__FILE__))
 require 'space_merchant'
 
-include SpaceMerchant
-
 player = SpaceMerchant::Player.instance
 
 puts
