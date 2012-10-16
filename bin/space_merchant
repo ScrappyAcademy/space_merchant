@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 #
 # space_merchant
-$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
+$LOAD_PATH << File.expand_path('../lib', File.dirname(__FILE__))
 require 'space_merchant'
 
 include SpaceMerchant
