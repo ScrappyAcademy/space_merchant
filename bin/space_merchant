@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+#
+# space_merchant
+$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
+require 'space_merchant'
+
+include SpaceMerchant
+
+player = SpaceMerchant::Player.instance
+
+puts
+puts "Welcome to Space Merchant #{SpaceMerchant::VERSION}, " +
+     "the Ruby Quiz game!"
+puts
+
+print "What would you like to be called, pilot? "
+loop do
+  name = gets.chomp
+
+  if name =~ /\S/
+    player[:name] = name
+
+    puts "#{player[:name]} it is."
+    puts
+
+    puts "May you find fame and fortune here in the Ruby Galaxy..."
+    puts
+
+    break
+  else
+    print "Please enter a name: "
+  end
+end
+
+player[:credits] = 1000
+
+# we initialize player[:location], it should be changed to move the player
+player[:location] = SpaceMerchant::Galaxy.instance.starting_location
+
+catch(:quit) do
+  # primary event loop
+  loop { player[:location].handle_event(player) }
+end
+
