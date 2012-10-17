@@ -11,8 +11,10 @@ module SpaceMerchant
   # We will use a basic Hash, but feel free to add methods to it
   class Player < SimpleDelegator
     include Singleton
+
     def initialize
-      super({})
+      @game_data = {}
+      super(@game_data)
     end
 
   end
