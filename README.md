@@ -32,23 +32,25 @@ The code in the inital space_merchant repository provides us with two objects:
 
   * **The Player Object** - :suspect: centralized storage for game state information (e.g. how much :moneybag: the
     player has)
-  * **The Event Loop** - the options a player has available at any given time, which are a function of where they are
-    e.g. while flying through space a player can select a destination but when docked commands center around buying and
-    selling goods
+  * [**The Event Loop**](https://github.com/ScrappyAcademy/space_merchant/blob/master/bin/space_merchant#L15) - :loop:
+    the options a player :suspect: has available at any given time, which are a function of where they are. Ex:
+      * While flying :rocket: through space a player :suspect: can select a destination :globe_with_meridians:
+      * When docked :parking: commands center around buying and selling goods
 
 
 ### Task 2 - Create the Galaxy (An object that represents space as a whole)
 
-The Galaxy is responsible for creating all of the game locations and allowing event code to access these locations
-(event code gives the player some choices, fetches an action from the keyboard, and responds appropriately). There
-should be only one Galaxy. The Galaxy object should construct Sector, Planet, and Station objects. 
+The `Galaxy` :milky_way: is responsible for creating all of the game locations and allowing event code to access these
+locations (event code gives the player :suspect: some choices, fetches an action from the keyboard, and responds
+appropriately). There should be only one `Galaxy` :milky_way:. The `Galaxy` object should construct `Sector` :globe_with_meridians:,
+`Planet` :earth_americas:, and `Station` :station: objects. 
 
 #### Navigation
 
-The Galaxy should provide a pathfinding algorithm, for use in navigation. The pathfinding method should return an Array
-of Sectors beginning with the start_sector and ending with the finish_sector. If the optional avoid_sectors are provided,
-they should not be used. It's okay to return nil, if a path could not be found, but this should only be possible with
-avoid_sectors.
+The `Galaxy` :milky_way: should provide a _pathfinding_ algorithm, for use in navigation. The `pathfinding` method
+should return an `Array` of `Sectors` beginning with the `start_sector` and ending with the `finish_sector`. If the
+optional argument `avoid_sectors` is provided, those sectors should not be used. It's okay to return `nil`, if a path
+could not be found, but this should only be possible with `avoid_sectors`.
 
 
 ### Task 3 - Create Sectors (Think of Sectors as squares on the game board)
